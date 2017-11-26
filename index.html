@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="vong-productions.css">
+	<script src="vong-productions.js"></script>
+	
+	<head>
+		<title>Sak Vongpradith's Portfolio</title>
+	</head>
+
+	<body style="background-color: #a2b6a6">
+		<div id="mySidenav" class="sidenav">
+		  <a id="worksButt" class="button" onclick="openTab('works', 'worksButt')" style="color: #fffaf6;cursor:pointer">Works</a>
+		  <a id="aboutButt" class="button" onclick="openTab('about', 'aboutButt')" style="cursor:pointer">About</a>
+		  <a id="contactButt" class="button" onclick="openTab('contact', 'contactButt')" style="cursor:pointer">Contact</a>
+		  <hr>
+		  <a id="starbaseButt" class="button" onclick="openTab('starbase', 'starbaseButt')" style="cursor:pointer; font-size: 16px">Starbase</a>
+		  <a id="hextraButt" class="button" onclick="openTab('hextra', 'hextraButt')" style="cursor:pointer; font-size: 16px">Hextraterrestrials</a>
+		</div>
+
+		<div id="main" class="row">
+			<div class="column left">
+				<span id="menuButt" style="font-size:30px;cursor:pointer;color: #1f4626" onclick="openNav()">&#9776; Menu</span>
+			</div>
+			
+			<div id="works" class="column right tab" style="display: block;">
+				<h1 style="padding-bottom: 20px">Works Page</h1>
+
+				<div id="projects" class="projects_area">
+					<!--Project Nodes-->
+					
+					<div class="project_node">
+						<a onclick="openTab('starbase', 'starbaseButt')" style="cursor: pointer">
+							<img src="Images/Starbase_Banner.jpg" alt="Starbase" style="max-height: 100%; max-width: 90%">
+						</a>
+						
+						<h3>Starbase</h3>
+						<h4>Flight Combat Simulator</h4>
+					</div>
+					
+					<div class="project_node">
+						<a onclick="openTab('hextra', 'hextraButt')" style="cursor: pointer">
+							<img src="Images/Hextra_Screenshot.jpg" alt="Starbase" style="max-height: 100%; max-width: 90%">
+						</a>
+						
+						<h3>Hextraterrestrials</h3>
+						<h4>Arcade Match-3</h4>
+					</div>
+				</div>
+			</div>
+			
+			<div id="starbase" class="column right tab" style="display: none;">
+				<h1>Starbase</h1>
+				
+				<div class="row">
+					<div class="column left_summary">
+						<p>
+							Starbase is a flight-simulator that takes place in space. Players assume the role of a fighter pilot for either the Allaster or Corrupio, two factions fighting for dominance in their star system.
+						</p>
+						
+						<p>
+							The goal of the game is to shoot down enemy fighter ships and collect the power cores they drop, then take them back to your mothership. Once a certain amount of cores are collected, the mothership’s main laser becomes fully powered and destroys the enemy mothership, winning the game.
+						</p>
+					</div>
+					
+					<div class="column right_details">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<h3>Role</h3>
+									</td>
+									
+									<td class="details_text">
+										Tech Lead, AI Programmer
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<h3>Role</h3>
+									</td>
+									
+									<td class="details_text">
+										Tech Lead, AI Programmer
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<h3>Role</h3>
+									</td>
+									
+									<td class="details_text">
+										Tech Lead, AI Programmer
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<div id="hextra" class="column right tab" style="display: none;">
+				<h1>Hextraterrestrials</h1>
+				
+				<div class="row">
+					<div class="column left_summary">
+						<p>
+							Hextraterrestrials is a hex-based match 3 game in the vein of Bubble Bobble and Space Invaders.
+						</p>
+						
+						<p>
+							Players control a hovercraft that shoots colored shots up towards colored enemy ships. If the shot connects, it creates a hex of the same color as the shot, and if at least 2 enemy ships of the same color are connected to that shot, the whole group explodes. Players must destroy the white turret ships, which are destroyed if no other ships surround it.
+						</p>
+					</div>
+					
+					<div class="column right_details">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<h3>Role</h3>
+									</td>
+									
+									<td class="details_text">
+										Tech Lead, AI Programmer
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<h3>Role</h3>
+									</td>
+									
+									<td class="details_text">
+										Tech Lead, AI Programmer
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<h3>Role</h3>
+									</td>
+									
+									<td class="details_text">
+										Tech Lead, AI Programmer
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<div id="about" class="column right tab" style="display: none;">
+				<h1>About</h1>
+			</div>
+			
+			<div id="contact" class="column right tab" style="display: none;">
+				<h1>Contact</h1>
+			</div>
+		</div>
+	</body>
+</html>

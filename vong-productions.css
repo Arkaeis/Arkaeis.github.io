@@ -1,0 +1,156 @@
+body{
+	font-family: Arial, sans-serif;
+}
+h1 {
+	color: #1f4626;
+	font-weight: normal;
+}
+
+h3 {
+	color: #1f4626;
+	font-weight: normal;
+	font-style: italic;
+}
+
+h4 {
+	color: #062C0D;
+	font-weight: normal;
+}
+
+p {
+	color: #062C0D;	
+}
+
+hr {
+	margin-top: 32px;
+	margin-bottom: 32px;
+	margin-left: 32px;
+	margin-right: 144px;
+	border-width: .25px;
+	border-color: #a2b6a6;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #000607; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 100px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #4c7253;
+    display: block;
+    transition: 0.3s
+}
+
+#menuButt {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+	padding-top: 30px; /* Place content 60px from the top */
+	padding-left: 30px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 500px) {
+	.project_node {width: 100%;}
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+	width: 10%;
+	height: 100%;
+}
+
+.left_summary {
+	width: 50%;
+	text-align: left;
+}
+
+.right_details {
+	width: 45%;
+}
+
+.right_details table {
+	width: 90%;
+	border: none;
+	border-spacing: 0px;
+	text-align: left;
+}
+
+.right_details tr:nth-child(2n+1){
+	background-color: #D4DDC4;
+}
+
+.right_details h3 {
+	color: #1f4626;
+	font-weight: normal;
+	font-style: italic;
+	margin: 10px;
+}
+
+.details_text {
+	color: #062C0D;	
+}
+
+.right {
+	width: 85%;
+	text-align: center;
+	display: table-cell;
+}
+
+.projects_area {
+	float: left;
+	width: 100%;
+}
+
+.projects_area:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.project_node {
+	float: left;
+	width: 50%;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.project_node:after{
+	content: "";
+	display: table;
+	clear: both;
+}
