@@ -1,10 +1,9 @@
 // Open sidenav
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("main").style.marginLeft = "150px";
 	document.getElementById("menuButt").innerHTML = "&#9776 Hide";
 	document.getElementById("menuButt").style.color = "#fffaf6";
-	//document.getElementById("menuButt").style.left = "250px";
 	document.getElementById("menuButt").onclick = closeNav;
 }
 
@@ -14,7 +13,6 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
 	document.getElementById("menuButt").innerHTML = "&#9776; Menu";
 	document.getElementById("menuButt").style.color = "#1f4626";
-	//document.getElementById("menuButt").style.left = "0px";
 	document.getElementById("menuButt").onclick = openNav;
 }
 

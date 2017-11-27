@@ -40,7 +40,7 @@
 					
 					<div class="project_node">
 						<a onclick="openTab('hextra', 'hextraButt')" style="cursor: pointer">
-							<img src="Images/Hextra_Screenshot.jpg" alt="Starbase" style="max-height: 100%; max-width: 90%">
+							<img src="Images/Hextra_Screenshot.jpg" alt="Hextraterrestrials" style="max-height: 100%; max-width: 90%">
 						</a>
 						
 						<h3>Hextraterrestrials</h3>
@@ -52,13 +52,19 @@
 			<div id="starbase" class="column right tab" style="display: none;">
 				<h1>Starbase</h1>
 				
+				<video class="video" width="100%" height="auto" style="padding-bottom: 25px" controls>
+					<source src="Videos/StarbaseDemo.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				
 				<div class="row">
 					<div class="column left_summary">
-						<p>
-							Starbase is a flight-simulator that takes place in space. Players assume the role of a fighter pilot for either the Allaster or Corrupio, two factions fighting for dominance in their star system.
-						</p>
+						<h3>Summary</h3>
 						
 						<p>
+							Starbase is a flight-simulator that takes place in space. Players assume the role of a fighter pilot for either the Allaster or Corrupio, two factions fighting for dominance in their star system.
+							<br>
+							<br>
 							The goal of the game is to shoot down enemy fighter ships and collect the power cores they drop, then take them back to your mothership. Once a certain amount of cores are collected, the mothership’s main laser becomes fully powered and destroys the enemy mothership, winning the game.
 						</p>
 					</div>
@@ -78,25 +84,44 @@
 								
 								<tr>
 									<td>
-										<h3>Role</h3>
+										<h3>For</h3>
 									</td>
 									
 									<td class="details_text">
-										Tech Lead, AI Programmer
+										University of Central Florida - Game Design Workshop Summer 2017
 									</td>
 								</tr>
 								
 								<tr>
 									<td>
-										<h3>Role</h3>
+										<h3>Made With</h3>
 									</td>
 									
 									<td class="details_text">
-										Tech Lead, AI Programmer
+										Unity
 									</td>
 								</tr>
 							</tbody>
 						</table>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="column left_reflection">
+						<h3>Reflection</h3>
+						
+						<p>
+						Starbase was a strange project for me, but a great experience. It started out very rough; the team was divided on what kind of game to make, and even when a compromise had been reached, I could tell not many of us were very enthusiastic about the final idea. However, as the ball got rolling, we all somehow just started churning things out, and got more and more excited about the finished product while smoothly meeting project milestones the whole way through. Honestly, the way things were going in the beginning, I was thinking of trying my luck with a different group, but I'm glad I stayed on, in the end.
+						<br>
+						<br>
+						There were two things that presented a problem for me with this project. One: I had never worked with AI before, and two: Unity had no built in AI navigation for 3D space, which we were going to need if we wanted to make a flight simulator. 
+						<br>
+						<br>
+						The first problem was remedied easily with a few good online resources. At first I was anxious about volunteering for AI duty, but, luckily, what we needed for our game wasn't as hard to implement as I had feared. I settled on a simple finite state machine for our AI, since we really only needed the AI to be in a few different states at any given moment.
+						<br>
+						<br>
+						The second problem didn't have such an easy fix, and it took lots of brainstorming and paper prototyping before I figured out something that would work. I had to get a vector to the target point in space, and then compare the angle of the AI's up and forward vectors to the target vector projected onto the x and z planes, respectively. After that, the cross and dot product of each angle was calculated to determine which way the AI should turn on each axis. Definitely learned a lot about vector mathematics.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -104,13 +129,19 @@
 			<div id="hextra" class="column right tab" style="display: none;">
 				<h1>Hextraterrestrials</h1>
 				
+				<video class="video" width="100%" height="auto" style="padding-bottom: 25px" controls>
+					<source src="Videos/HextraTerrestrialsDemo.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				
 				<div class="row">
 					<div class="column left_summary">
-						<p>
-							Hextraterrestrials is a hex-based match 3 game in the vein of Bubble Bobble and Space Invaders.
-						</p>
+						<h3>Summary</h3>
 						
 						<p>
+							Hextraterrestrials is a hex-based match 3 game in the vein of Bubble Bobble and Space Invaders.
+							<br>
+							<br>
 							Players control a hovercraft that shoots colored shots up towards colored enemy ships. If the shot connects, it creates a hex of the same color as the shot, and if at least 2 enemy ships of the same color are connected to that shot, the whole group explodes. Players must destroy the white turret ships, which are destroyed if no other ships surround it.
 						</p>
 					</div>
@@ -124,27 +155,104 @@
 									</td>
 									
 									<td class="details_text">
-										Tech Lead, AI Programmer
+										Creative Director, Tech Lead
 									</td>
 								</tr>
 								
 								<tr>
 									<td>
-										<h3>Role</h3>
+										<h3>For</h3>
 									</td>
 									
 									<td class="details_text">
-										Tech Lead, AI Programmer
+										University of Central Florida - Casual Game Production Spring 2017
 									</td>
 								</tr>
 								
 								<tr>
 									<td>
-										<h3>Role</h3>
+										<h3>Made With</h3>
 									</td>
 									
 									<td class="details_text">
-										Tech Lead, AI Programmer
+										Unity
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="column left_reflection">
+						<h3>Reflection</h3>
+						
+						<p>
+						This game was one of the first I'd made that really felt like a complete experience. I worked with two other individuals (as well as a 3rd addition, later in the semester), and together we learned and gained experience with our first big project.
+						<br>
+						<br>
+						The biggest challenge for me here was setting up the play area. The hex-grid seen in game is just a standard 2D array, set to visually offset itself every other column. The bulk of the code that went into making the thing work was a breadth-first search that triggered when a player's shot hit a piece on the grid. I learned a lot about optimizing my algorithms and function calls with the way the grid was set up, but in the end, everything worked exactly as expected, which I feel was a win.
+						<br>
+						<br>
+						I also gained an appreciation for all the little things that go into games, like particle effects and screen shake. The game wouldn't have been nearly as exciting without our special effects guy!
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="about" class="column right tab" style="display: none;">
+				<h1>About</h1>
+				
+				<div class="row">
+					<div class="column left_about">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<h3>Full Name</h3>
+									</td>
+									
+									<td class="details_text">
+										Sak Vongpradith
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<h3>Title</h3>
+									</td>
+									
+									<td class="details_text">
+										Game Programmer
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="column right_about">
+						<a href="Files/Vongpradith_Resume.pdf" download>
+							<img border="0" src="Images/Resume.png" alt="Resume" style="max-height: 200px; max-width: 90%">
+						</a>
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="column left_bio">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<h3>Bio</h3>
+									</td>
+									
+									<td class="details_text">
+										I love computers, and I've always known that I wanted to do something involving them. I started college trying for a degree in Computer Science, but then I found that UCF offered a degree in Game Design, and I immediately signed up for it.
+										<br>
+										<br>
+										Video games have always had a big impact on my life; growing up, I had to move around a lot, so any friends I made didn't last for long. All I had was a Playstation that my dad had bought for me, so most of my time was spent getting lost in the dozens of worlds video games had to offer. The transition from general software programming to video game programming was a natural one for me, and I hope to make and contribute to the virtual worlds of video games in the future.
 									</td>
 								</tr>
 							</tbody>
@@ -153,12 +261,20 @@
 				</div>
 			</div>
 			
-			<div id="about" class="column right tab" style="display: none;">
-				<h1>About</h1>
-			</div>
-			
 			<div id="contact" class="column right tab" style="display: none;">
 				<h1>Contact</h1>
+				
+				<div id="projects" class="projects_area">
+					<!--Project Nodes-->
+					
+					<div class="project_node">
+						<img src="Images/Email.png" alt="E-mail" style="max-height: 100%; max-width: 90%">
+					</div>
+					
+					<div class="project_node">
+						<img src="Images/PhoneNumber.png" alt="Phone Number" style="max-height: 100%; max-width: 90%">
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

@@ -1,9 +1,10 @@
 body{
-	font-family: Arial, sans-serif;
+	font-family: "Helvetica Neue", Arial, sans-serif;
 }
 h1 {
 	color: #1f4626;
 	font-weight: normal;
+	margin-bottom: 50px;
 }
 
 h3 {
@@ -28,6 +29,12 @@ hr {
 	margin-right: 144px;
 	border-width: .25px;
 	border-color: #a2b6a6;
+}
+
+.tab hr {
+	margin: 32px;
+	border-width: .25px;
+	border-color: #1f4626;
 }
 
 .sidenav {
@@ -99,6 +106,62 @@ hr {
 	text-align: left;
 }
 
+.left_reflection {
+	width: 100%;
+	text-align: left;
+}
+
+.left_about {
+	width: 50%;
+	text-align: left;
+}
+
+.left_about table {
+	width: 90%;
+	border: none;
+	border-spacing: 0px;
+	text-align: left;
+}
+
+.left_about h3{
+	color: #1f4626;
+	font-weight: normal;
+	font-style: italic;
+	margin: 10px;
+	margin-right: 82px;
+}
+
+.left_bio {
+	width: 100%;
+	text-align: left;
+}
+
+.left_bio table {
+	width: 90%;
+	border: none;
+	border-spacing: 0px;
+	text-align: left;
+}
+
+.left_bio td {
+	vertical-align: top;
+}
+
+.left_bio h3{
+	color: #1f4626;
+	font-weight: normal;
+	font-style: italic;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 15px;
+	margin-right: 100px;
+}
+
+.left_bio .details_text {
+	color: #062C0D;	
+	width: 95%;
+}
+
 .right_details {
 	width: 45%;
 }
@@ -121,8 +184,13 @@ hr {
 	margin: 10px;
 }
 
+.right_about {
+	width: 45%;
+}
+
 .details_text {
 	color: #062C0D;	
+	width: 80%;
 }
 
 .right {
