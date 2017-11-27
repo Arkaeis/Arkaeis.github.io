@@ -52,7 +52,7 @@
 			<div id="starbase" class="column right tab" style="display: none;">
 				<h1>Starbase</h1>
 				
-				<video id="starbase_video" width="100%" height="auto" style="padding-bottom: 25px" controls>
+				<video id="starbase_video" width="80%" height="auto" style="padding-bottom: 25px" controls>
 					<source src="Videos/StarbaseDemo.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
@@ -121,6 +121,9 @@
 						<br>
 						<br>
 						The second problem didn't have such an easy fix, and it took lots of brainstorming and paper prototyping before I figured out something that would work. I had to get a vector to the target point in space, and then compare the angle of the AI's up and forward vectors to the target vector projected onto the x and z planes, respectively. After that, the cross and dot product of each angle was calculated to determine which way the AI should turn on each axis. Definitely learned a lot about vector mathematics.
+						<br>
+						<br>
+						One thing I would change if I ever came back to this project is how the AI detected collisions. As it is, it uses raycasts to detect any colliders ahead of the ship based on how fast it's moving, but this can cause lag with too many AI ships on the field. If it wasn't raycasting in the update function, then it definitely wouldn't cause as much strain, but I was unable to find a better solution before the end of the project.
 						</p>
 					</div>
 				</div>
@@ -129,7 +132,7 @@
 			<div id="hextra" class="column right tab" style="display: none;">
 				<h1>Hextraterrestrials</h1>
 				
-				<video id="hextra_video" width="100%" height="auto" style="padding-bottom: 25px" controls>
+				<video id="hextra_video" width="80%" height="auto" style="padding-bottom: 25px" controls>
 					<source src="Videos/HextraTerrestrialsDemo.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
