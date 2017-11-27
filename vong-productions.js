@@ -16,16 +16,6 @@ function closeNav() {
 	document.getElementById("menuButt").onclick = openNav;
 }
 
-function openTab(tabName) {
-	var i;
-	var x = document.getElementsByClassName("column right tab");
-	for (i = 0; i < x.length; i++){
-		x[i].style.display = "none";
-	}
-	
-	document.getElementById(tabName).style.display = "block";
-}
-
 function openTab(tabName, buttonName) {
 	var i;
 	var x = document.getElementsByClassName("column right tab");
@@ -37,9 +27,7 @@ function openTab(tabName, buttonName) {
 	for (i = 0; i < x.length; i++){
 		x[i].style.color = "#4c7253";
 	}
-	
 	var op = 0.05;  // initial opacity
-    
 	
     var timer = setInterval(function () {
         if (op >= 1){
@@ -52,4 +40,9 @@ function openTab(tabName, buttonName) {
 	
 	document.getElementById(tabName).style.display = 'block';
 	document.getElementById(buttonName).style.color = "#fffaf6";
+	
+	document.getElementById("starbase_video").pause();
+	document.getElementById("starbase_video").currentTime = 0;
+	document.getElementById("hextra_video").pause();
+	document.getElementById("hextra_video").currentTime = 0;
 }
