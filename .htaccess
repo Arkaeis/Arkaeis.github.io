@@ -1,3 +1,4 @@
+foo bar
 AuthType Basic
 AuthName "restricted area"
 AuthUserFile .htpasswd
