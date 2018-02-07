@@ -1,0 +1,7 @@
+foo bar
+
+
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile /home/davidwalsh/html/protect-me-dir/.htpasswd
+require valid-user
